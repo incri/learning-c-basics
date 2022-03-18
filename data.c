@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 struct phone {
 char name[50];
 char Aname[50];
@@ -16,4 +16,7 @@ phone1.Aversion = 7.7;
 phone1.Bbackup = 3200;
 
 printf("%s",phone1.name);
+
+//print(phone1);
+return 0;
 }
