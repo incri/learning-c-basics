@@ -1,14 +1,15 @@
 #include<stdio.h>
 int main ()
 {
-
+//initialize array
 int n[] = {4, 2, 5, 3, 1 };
-int i, j, t;
+//calculate length of array
+int l= sizeof n / sizeof(n[0]);
 
-j=1;
+int t;
 
-for (i=0; i<5-1; i++){
-for (j=i+1; j<5; j++){
+for (int i=0; i<l-1; i++){
+for (int j=i+1; j<l; j++){
 if (n[i]>n[j]){
 //bubble sorting or exchanging value//
 t=n[i];
@@ -19,7 +20,7 @@ n[j]=t;
 }
 }
 printf ("ascending order is:\n");
-   for (i=0; i<5; i++)
+   for (int i=0; i<l; i++)
       printf("%d\t", n[i]);
 return 0;
 }
