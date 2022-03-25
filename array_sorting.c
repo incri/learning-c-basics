@@ -6,7 +6,7 @@ int main(){
 
 
 int n,e[100];
-printf("enter number of elements :\n");
+printf("enter number of elements in array :\n");
 scanf("%d", &n);
 printf("enter elements :\n");
 int i;
